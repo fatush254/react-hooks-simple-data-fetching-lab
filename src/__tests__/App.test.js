@@ -21,7 +21,7 @@ test("displays the dog image after fetching", async () => {
 
 test("displays a loading message before fetching", async () => {
   render(<App />);
-  expect(screen.queryByText(/Loading/)).toBeInTheDocument();
+  expect(screen.qetByText(/Loading/)).toBeInTheDocument();
 
   const img = await screen.findByAltText("A Random Dog");
   expect(img.src).toBe(
